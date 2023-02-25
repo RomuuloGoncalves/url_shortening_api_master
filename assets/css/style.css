@@ -3,7 +3,7 @@
     --Cyan: hsl(180, 66%, 49%);
     --Dark-Violet: hsl(257, 27%, 26%);
 
-    --Gray: hsl(0, 0%, 75%)
+    --Gray: hsl(0, 0%, 75%);
     --Grayish-Violet: hsl(257, 7%, 63%);
     --Very-Dark-Blue: hsl(255, 11%, 22%);
     --Very-Dark-Violet: hsl(260, 8%, 14%);
@@ -56,6 +56,7 @@ header{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    align-items: center;
     gap: 10px;
 }
 
@@ -79,4 +80,55 @@ header{
 
 .btn__login:hover, .btn__singup:hover{
     cursor: pointer;
+}
+
+@media(max-width:800px){
+    .menu__navegacao, .botoes__acesso, .linha{
+        display: none;
+    }
+
+    .menu__navegacao.active, .botoes__acesso.active, .linha.active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 150px;
+        z-index: 2;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+
+    .botoes__acesso.active{
+        top: 300px;
+    }
+
+    .menu__navegacao nav{
+        flex-direction: column;
+        justify-self: center;
+        gap: 30;
+    }
+
+    .menu__navegacao nav li, .botoes__acesso button{
+        font-weight: 700;
+        color:#ffff;
+    }
+
+    .fundo__menu.active{
+        width: 80%;
+        height: 350px;
+        position: absolute;
+        top: 80px;
+        border-radius: 20px;
+        background-color: var(--Dark-Violet);
+    }
+
+    .botoes__acesso.active button{
+        width: 80%;
+    }
+
+    .linha.active{
+        border: 0.5px solid var(--Gray);
+        width: 70%;
+        top: 280px;
+    }
 }
