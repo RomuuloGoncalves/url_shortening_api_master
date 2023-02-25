@@ -1,0 +1,82 @@
+:root{
+
+    --Cyan: hsl(180, 66%, 49%);
+    --Dark-Violet: hsl(257, 27%, 26%);
+
+    --Gray: hsl(0, 0%, 75%)
+    --Grayish-Violet: hsl(257, 7%, 63%);
+    --Very-Dark-Blue: hsl(255, 11%, 22%);
+    --Very-Dark-Violet: hsl(260, 8%, 14%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__menu{
+    height: 70px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.logo img{
+    scale: 1.2;
+}
+
+.menu__navegacao nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container__menu li, .container__menu a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--Gray);
+}
+
+.botoes__acesso{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.btn__login, .btn__singup{
+    font-size: 18px;
+    padding: 10px;
+}
+
+.btn__login{
+    background-color: transparent;
+    border: 0;
+}
+
+.btn__singup{
+    padding: 15px;
+    background-color: var(--Cyan);
+    border: 0;
+    color: #ffff;
+    border-radius: 50px;
+}
+
+.btn__login:hover, .btn__singup:hover{
+    cursor: pointer;
+}
