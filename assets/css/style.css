@@ -190,8 +190,13 @@ main{
         flex-direction: column;
     }
 
+    .texto h1, .texto p{
+        text-align: center;
+    }
+
     .texto{
         width: 90%;
+        align-items: center;
     }
 
     .imagem{
