@@ -9,4 +9,8 @@ function toggleMenu() {
     elementos.forEach((elemento)=>{
         elemento.classList.toggle("active")
     })
+
+    const imgIcon =  document.querySelector(".hamburguer__menu__icon img")
+
+    elementos[0].classList.contains("active") ? imgIcon.setAttribute("src", "./assets/img/icon-close-menu.svg") : imgIcon.setAttribute("src", "./assets/img/icon-menu.svg")
 }

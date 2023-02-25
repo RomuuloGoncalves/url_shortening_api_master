@@ -1,3 +1,7 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
 :root{
 
     --Cyan: hsl(180, 66%, 49%);
@@ -12,7 +16,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    font-family: 'Poppins', sans-serif;}
 
 body{
     min-height: 100vh;
@@ -82,9 +86,59 @@ header{
     cursor: pointer;
 }
 
+main{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.texto h1{
+    font-weight: 800;
+}
+
+.texto{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.texto p{
+    color: var(--Gray);
+    font-size: 18px;
+    font-weight: 1000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.get__started{
+    padding: 10px 20px;
+    background-color: var(--Cyan);
+    color: #ffff;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 25px;
+    border: 0;
+}
+
+.hamburguer__menu__icon{
+    display: none;
+}
+
 @media(max-width:800px){
     .menu__navegacao, .botoes__acesso, .linha{
         display: none;
+    }
+
+    .hamburguer__menu__icon{
+        display: block;
     }
 
     .menu__navegacao.active, .botoes__acesso.active, .linha.active{
@@ -130,5 +184,22 @@ header{
         border: 0.5px solid var(--Gray);
         width: 70%;
         top: 280px;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    .texto{
+        width: 90%;
+    }
+
+    .imagem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagem img{
+        width: 80%;
     }
 }
