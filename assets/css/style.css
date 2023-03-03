@@ -162,6 +162,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     position: absolute;
     z-index: 3;
@@ -259,5 +260,13 @@ main{
     }
     .imagem img{
         width: 80%;
+    }
+
+    .container__input{
+        transform: translateX(-50%);
+    }
+
+    .campo input{
+        width: 100%;
     }
 }
