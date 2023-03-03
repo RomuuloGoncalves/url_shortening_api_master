@@ -63,7 +63,7 @@ header{
     gap: 10px;
 }
 
-.btn__login, .btn__singup{
+.btn__login, .btn__signup{
     font-size: 18px;
     padding: 10px;
 }
@@ -73,15 +73,15 @@ header{
     border: 0;
 }
 
-.btn__singup{
-    padding: 15px;
+.btn__signup{
+    padding: 10px 20px;
     background-color: var(--Cyan);
     border: 0;
     color: #ffff;
     border-radius: 50px;
 }
 
-.btn__login:hover, .btn__singup:hover{
+.btn__login:hover, .btn__signup:hover{
     cursor: pointer;
 }
 
