@@ -95,6 +95,8 @@ main{
     gap: 60px;
     margin-top: 30px;
     padding: 50px 0;
+    padding-bottom: 200px;
+    flex-wrap: wrap;
 }
 
 .texto h1{
@@ -136,6 +138,8 @@ main{
     min-height: 50vh; 
     width: 100%;
     background-color: var(--Gray);
+    display: flex;
+    flex-direction: column;
 }
 
 .container__input{
@@ -171,6 +175,8 @@ main{
 
 .campo input, .campo button{
     border-radius: 10px;
+    border: 0;
+    outline: 0;
 }
 
 .campo input{
@@ -186,6 +192,53 @@ main{
     border: 0;
     font-weight: 700;
 }
+
+.resultados{
+    width: 80%;
+    min-height: 20px;
+    align-self: center;
+}
+
+.campo__resultado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    background: #ffff;
+    flex-wrap: wrap;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#link__original{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.links a{
+    text-align: right;
+
+    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.links button{
+    padding: 10px 20px;
+    background-color: var(--Cyan);
+    border: 0;
+    border-radius: 10px;
+}
+
 @media(max-width:800px){
     .menu__navegacao, .botoes__acesso, .linha{
         display: none;
@@ -268,5 +321,19 @@ main{
 
     .campo input{
         width: 100%;
+    }
+
+    .resultados{
+        margin-top: 20px;
+    }
+
+    .campo input, .campo button{
+        width: 90%;
+    }
+}
+
+@media(max-width: 2000){
+    .container__input{
+        top: 150px;
     }
 }
