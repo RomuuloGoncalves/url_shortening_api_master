@@ -331,10 +331,9 @@ main{
     .campo input, .campo button{
         width: 90%;
     }
-}
 
-@media(max-width: 2000){
-    .container__input{
-        top: 150px;
+    #link__original{
+        width: 100%;
     }
 }
+
