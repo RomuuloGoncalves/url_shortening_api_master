@@ -135,11 +135,12 @@ main{
 }
 
 .second__main{
-    min-height: 50vh; 
+    min-height: 90vh; 
     width: 100%;
     background-color: var(--Gray);
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
 }
 
 .container__input{
@@ -208,6 +209,7 @@ main{
     border-radius: 10px;
     background: #ffff;
     flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 
 .links{
@@ -239,6 +241,97 @@ main{
     border: 0;
     border-radius: 10px;
 }
+
+.estatisticas{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.estatisticas .titulo{
+    text-align: center;
+    width: 50%;
+}
+
+.quadros{
+    min-height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+    flex-wrap: wrap;
+}
+
+.quadro{
+    background-color: #ffff;
+    height: 300px;
+    width: 300px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quadro .imagem{
+    background-color: var(--Very-Dark-Blue);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    top: -40px;
+}
+
+.quadro h2, .quadro p{
+    position: relative;
+    top: -50px;
+}
+
+.boost__your__link{
+    min-height: 20vh;
+    background-color: var(--Dark-Violet);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boost__your__link img{
+    height: 100%;
+    width: 100%;
+}
+
+.texto__boost{
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.boost__your__link h1{
+    font-size: 4rem;
+    color: #ffff;
+}
+
+.get__started__boost__link{
+    width: 200px;
+    padding: 10px 20px;
+    background-color: var(--Cyan);
+    color: #ffff;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 25px;
+    border: 0;
+}
+
 
 @media(max-width:800px){
     .menu__navegacao, .botoes__acesso, .linha{
@@ -334,6 +427,28 @@ main{
 
     #link__original{
         width: 100%;
+    }
+
+    .quadros{
+        gap: 100px;
+    }
+
+    .boost__your__link h1{
+        font-size: 1rem;
+    }
+
+    .boost__your__link img{
+        min-height: 20vh;
+    }
+
+    .get__started__boost__link{
+        padding: 10px 20px;
+        background-color: var(--Cyan);
+        color: #ffff;
+        font-weight: 500;
+        font-size: 18px;
+        border-radius: 25px;
+        border: 0;
     }
 }
 
